@@ -16,6 +16,7 @@ local bert_model = "bert-base-uncased";
         "max_tokens": 512
     },
     "train_data_path": "data/train.csv",
+    "validation_data_path": "data/valid.csv",
     "model": {
         "type": "simple_classifier",
         "embedder": {
