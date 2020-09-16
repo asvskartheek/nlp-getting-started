@@ -1,0 +1,1 @@
+kaggle competitions submit -c nlp-getting-started -f experiments/predictions/$1.csv -m \"$2\"
