@@ -1,4 +1,7 @@
 {
+    numpy_seed: 0,
+    pytorch_seed: 0,
+    random_seed: 0,
     "dataset_reader" : {
         "type": "classification-csv",
         "token_indexers": {
@@ -36,6 +39,7 @@
         "shuffle": true
     },
     "trainer": {
+        "cuda_device": 0,
         "optimizer": "adam",
         "num_epochs": 5
     }
