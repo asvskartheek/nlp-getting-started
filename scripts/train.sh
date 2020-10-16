@@ -1,6 +1,6 @@
 # train.sh {model_arch}
-allennlp train \
-	experiments/configs/$1.jsonnet \
-	-s experiments/results/$1 \
-	--include-package src.dataset_reader \
-	--include-package src.models
+wandb_allennlp \
+	--subcommand=train \
+	--config_file=experiments/configs/bert.jsonnet \
+	--include-package=src.models.simple_model \
+	--include-package=src.dataset_reader
